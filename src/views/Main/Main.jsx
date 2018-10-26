@@ -1,6 +1,7 @@
 /* jshint esversion:6 */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -20,13 +21,16 @@ const styles = theme => ({
       height: 460
     },
     [theme.breakpoints.up('md')]: {
-      height: 600
+      height: 560
     },  
     [theme.breakpoints.up('lg')]: {
-      height: 800
+      height: 600
     },
     [theme.breakpoints.between('lg','xl')]: {
-      height: 1024
+      height: 620
+    },
+    [theme.breakpoints.up('xl')]: {
+      height: 700
     },
   },
   root: {
@@ -75,6 +79,8 @@ function Main(props) {
                     </Button>
                     {/* <p>{`Current width: ${props.width}`}</p> */}
                     <Button
+                        component={Link}
+                        to="/ruta"
                         variant="contained"
                         className={classes.button}
                         color="secondary"
