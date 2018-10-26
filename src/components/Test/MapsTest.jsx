@@ -2,19 +2,14 @@
 import React from "react";
 import { compose, withProps } from "recompose";
 import {
-    withScriptjs,
-    withGoogleMap,
-    GoogleMap,
-    Marker
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker
 } from "react-google-maps";
 
 const MyMapComponent = compose(
   withProps({
-    /**
-     * Note: create and replace your own key in the Google console.
-     * https://console.developers.google.com/apis/dashboard
-     * The key "AIzaSyBkNaAGLEVq0YLQMi-PYEMabFeREadYe1Q" can be ONLY used in this sandbox (no forked).
-     */
     /* jshint ignore: start */
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?key=AIzaSyBs4Icy6WhjZ73-pqjPLKsq0p8I06AsCII&v=3.exp&libraries=geometry,drawing,places",
@@ -34,4 +29,5 @@ const MyMapComponent = compose(
   </GoogleMap>
   /* jshint ignore: end */
 ));
+
 export default MyMapComponent;

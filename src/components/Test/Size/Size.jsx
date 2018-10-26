@@ -1,7 +1,14 @@
 /* jshint esversion: 6 */
 import React from 'react';
-import Map from '../../components/Maps/Map';
-class Ruta extends React.Component{
+
+// function Ruta(props) {
+//     return(
+//         /* jshint ignore: start */
+//         <p>Hello World</p>
+//         /* jshint ignore: end */
+//     );
+// }
+class Ruta extends React.Component {
     constructor(props) {
         super(props);
         this.state = { width: 0, height: 0 };
@@ -19,14 +26,14 @@ class Ruta extends React.Component{
     updateWindowDimensions() {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
-    
-    render(){
-        return(
-            /* jshint ignore: start */
-            <Map
-                height={this.state.height-63}
-             />
 
+    render() {
+        return (
+            /* jshint ignore: start */
+            <div>
+                <p>{this.state.height}</p>
+                <p> {this.state.width} </p>
+            </div>
             /* jshint ignore: end */
         );
     }

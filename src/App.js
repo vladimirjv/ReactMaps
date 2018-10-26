@@ -5,7 +5,8 @@ import React, {
 import './App.css';
 import Header from './components/Header';
 import Main from './views/Main/Main';
-import Maps  from './views/Maps/Maps';
+// import Maps  from './views/Maps/Maps';
+import Ruta from './views/Ruta/Ruta';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
@@ -20,7 +21,7 @@ class App extends Component {
         < BrowserRouter >
           <Switch>
             <Route path='/' exact component={Main}/>
-            <Route path='/ruta' component={Maps}/>
+            <Route path='/ruta' component={Ruta}/>
           </Switch>
         </BrowserRouter>
       </div>

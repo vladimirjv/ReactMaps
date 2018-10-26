@@ -86,7 +86,7 @@ function Main(props) {
                         color="secondary"
                         fullWidth
                     >
-                        Rutas
+                        Mapa
                     </Button>
                 </Grid>
             </Grid>
